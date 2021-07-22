@@ -2,9 +2,10 @@ function findFunction(record){
     return (record.result === "W")
 }
 
-function superbowlWin(record){
-    const finder = record.find(findFunction)
-    return (finder === undefined ? undefined : finder.year)
+function superbowlWin(records){
+    const win = records.find(findFunction)
+    console.log(win)
+    return (win === undefined ? undefined : win.year)
 }
 
 
